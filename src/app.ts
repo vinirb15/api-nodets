@@ -1,4 +1,4 @@
-import 'dotenv';
+import 'dotenv/config';
 import express, { Request, Response, Errback, Application } from 'express'
 import cors from 'cors';
 import routes from './routes';
