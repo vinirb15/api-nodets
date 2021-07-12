@@ -6,10 +6,10 @@ export const knexConfig: KnexConfig = {
   development: {
     client: 'postgres',
     connection: {
-      host: process.env.rasp_access_key_id,
-      user: process.env.rasp_access_key_user_rds,
-      password: process.env.rasp_access_secrety_key,
-      database: 'commerce',
+      host: process.env.dev_access_key_id,
+      user: process.env.dev_access_key_user,
+      password: process.env.dev_access_secrety_key,
+      database: 'myapp',
       insecureAuth: true
     },
     migrations: {
@@ -24,10 +24,10 @@ export const knexConfig: KnexConfig = {
   production: {
     client: 'postgresql',
     connection: {
-      host: process.env.aws_access_key_id_rds,
-      user: process.env.aws_access_key_user_rds,
-      password: process.env.aws_access_secrety_key_rds,
-      database: 'commerce',
+      host: process.env.aws_access_key_id,
+      user: process.env.aws_access_key_user,
+      password: process.env.aws_access_secrety_key,
+      database: 'myapp',
     },
     pool: {
       min: 2,

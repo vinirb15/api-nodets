@@ -25,5 +25,6 @@ app.listen(process.env.PORT, () => {
     var dtNow = new Date;
     console.log('--------------------------------------');
     console.log('    Server running: ' + dtNow.getHours() + ":" + dtNow.getMinutes() + ":" + dtNow.getSeconds());
+    console.log('ENV: ' + process.env.NODE_ENV + ' PORT: ' + process.env.PORT);
     console.log('--------------------------------------');
 });
